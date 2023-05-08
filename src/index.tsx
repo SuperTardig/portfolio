@@ -2,10 +2,11 @@
 import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals.tsx';
 import './index.css'
 import About from './Components/About.tsx';
 import NavBar from './Components/Header.tsx';
+import Project from './Components/Project.tsx';
 import theme from './Theme.tsx';
 
 
@@ -16,13 +17,10 @@ root.render(
       <div>
         <NavBar />
         <About />
+        <Project />
       </div>
     </ThemeProvider>
   </React.StrictMode>
 );
-
-//<App />
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ 
 reportWebVitals();
